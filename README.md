@@ -7,6 +7,7 @@ WESLR ARC-AGI-2 submission package with bundled solver code, reproducibility doc
 - dummy/no-data smoke tests under `tests/`
 - reproducibility, evaluation, and exclusion docs under `docs/`
 - a submission notebook skeleton for packaging and review
+- `.gitignore` for cache and build-artifact hygiene
 
 ## Evaluation constraints
 - No internet during evaluation.
