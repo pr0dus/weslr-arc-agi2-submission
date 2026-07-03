@@ -25,6 +25,8 @@ Run the bundled smoke test:
 python -m pytest -q tests/test_dummy_no_data_smoke.py
 ```
 
+The Kaggle submission JSON is a top-level dict keyed by `task_id`, and each task maps to a list of prediction objects containing `attempt_1` and `attempt_2` grids.
+
 Optional import check, only if verified first:
 ```bash
 PYTHONPATH=src python -c "import weslr_arc_solver; print('weslr_arc_solver import OK')"
