@@ -2,6 +2,36 @@
 
 WESLR ARC-AGI-2 submission package with bundled solver code, reproducibility documentation, and no-internet evaluation support.
 
+## Quick start
+Clone the repository:
+```bash
+git clone https://github.com/pr0dus/weslr-arc-agi2-submission.git
+cd weslr-arc-agi2-submission
+```
+
+Create an optional virtual environment:
+```bash
+python -m venv .venv
+. .venv/bin/activate
+```
+
+Install the listed Python requirements:
+```bash
+python -m pip install -r requirements.txt
+```
+
+Run the bundled smoke test:
+```bash
+python -m pytest -q tests/test_dummy_no_data_smoke.py
+```
+
+Optional import check, only if verified first:
+```bash
+PYTHONPATH=src python -c "import weslr_arc_solver; print('weslr_arc_solver import OK')"
+```
+
+The bundled fixture is dummy/no-data only. It is intended to verify package wiring, import isolation, and output formatting before evaluation packaging.
+
 ## Repository contents
 - bundled solver code under `src/weslr_arc_solver`
 - dummy/no-data smoke tests under `tests/`
